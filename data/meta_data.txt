@@ -1,0 +1,10 @@
+file_name,growth_condition
+SRR10613920,stationary
+SRR10613921,stationary
+SRR10613922,stationary
+SRR10613923,biofilm
+SRR10613924,biofilm
+SRR10613925,biofilm
+SRR10613926,log
+SRR10613927,log
+SRR10613928,log
