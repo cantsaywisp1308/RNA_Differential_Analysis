@@ -1,0 +1,42 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##bcftoolsVersion=1.13+htslib-1.13+ds
+##bcftoolsCommand=mpileup -Ou -f /home/cantsaywisp1308/data/ncbi_dataset/data/GCF_000184745.1/GCF_000184745.1_ASM18474v1_genomic.fna /home/cantsaywisp1308/output/BAM_files/illumina_25/3164_5_S5_sorted.bam
+##reference=file:///home/cantsaywisp1308/data/ncbi_dataset/data/GCF_000184745.1/GCF_000184745.1_ASM18474v1_genomic.fna
+##contig=<ID=NC_014931.1,length=6550056>
+##ALT=<ID=*,Description="Represents allele(s) other than observed.">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=IDV,Number=1,Type=Integer,Description="Maximum number of raw reads supporting an indel">
+##INFO=<ID=IMF,Number=1,Type=Float,Description="Maximum fraction of raw reads supporting an indel">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw read depth">
+##INFO=<ID=VDB,Number=1,Type=Float,Description="Variant Distance Bias for filtering splice-site artefacts in RNA-seq data (bigger is better)",Version="3">
+##INFO=<ID=RPBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Read Position Bias (closer to 0 is better)">
+##INFO=<ID=MQBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Mapping Quality Bias (closer to 0 is better)">
+##INFO=<ID=BQBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Base Quality Bias (closer to 0 is better)">
+##INFO=<ID=MQSBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Mapping Quality vs Strand Bias (closer to 0 is better)">
+##INFO=<ID=SCBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Soft-Clip Length Bias (closer to 0 is better)">
+##INFO=<ID=FS,Number=1,Type=Float,Description="Phred-scaled p-value using Fisher's exact test to detect strand bias">
+##INFO=<ID=SGB,Number=1,Type=Float,Description="Segregation based metric.">
+##INFO=<ID=MQ0F,Number=1,Type=Float,Description="Fraction of MQ0 reads (smaller is better)">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="List of Phred-scaled genotype likelihoods">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes for each ALT allele, in the same order as listed">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Number of high-quality ref-forward , ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=MQ,Number=1,Type=Integer,Description="Average mapping quality">
+##bcftools_callVersion=1.13+htslib-1.13+ds
+##bcftools_callCommand=call -mv -Ob -o /home/cantsaywisp1308/output/VCF_files/illumina_25/3164_5_S5_.bcf; Date=Wed Jul 17 10:32:36 2024
+##bcftools_viewVersion=1.13+htslib-1.13+ds
+##bcftools_viewCommand=view -Oz -o /home/cantsaywisp1308/output/VCF_files/illumina_25/3164_5_S5_.vcf.gz /home/cantsaywisp1308/output/VCF_files/illumina_25/3164_5_S5_.bcf; Date=Wed Jul 17 10:33:51 2024
+##bcftools_viewCommand=view -v snps -Oz -o /home/cantsaywisp1308/output/VCF_files/illumina_25/3164_5_S5_snps.vcf.gz /home/cantsaywisp1308/output/VCF_files/illumina_25/3164_5_S5_.vcf.gz; Date=Wed Jul 17 14:51:31 2024
+##bcftools_viewCommand=view -i QUAL>50 -o /home/cantsaywisp1308/output/VCF_files/illumina_25/3164_5_S5_pass_snps.vcf.gz /home/cantsaywisp1308/output/VCF_files/illumina_25/3164_5_S5_snps.vcf.gz; Date=Wed Jul 17 15:18:34 2024
+##bcftools_isecVersion=1.13+htslib-1.13+ds
+##bcftools_isecCommand=isec -p shared_variants/illumina_25/1vs2/snps/ -n=9 output/VCF_files/illumina_25/3164_1_S1_pass_snps.vcf.gz output/VCF_files/illumina_25/3164_2_S2_pass_snps.vcf.gz output/VCF_files/illumina_25/3164_3_S3_pass_snps.vcf.gz output/VCF_files/illumina_25/3164_4_S4_pass_snps.vcf.gz output/VCF_files/illumina_25/3164_5_S5_pass_snps.vcf.gz output/VCF_files/illumina_25/3164_6_S6_pass_snps.vcf.gz output/VCF_files/illumina_25/3164_7_S7_pass_snps.vcf.gz output/VCF_files/illumina_25/3164_8_S8_pass_snps.vcf.gz output/VCF_files/illumina_25/3164_9_S9_pass_snps.vcf.gz; Date=Thu Jul 18 15:24:37 2024
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	/home/cantsaywisp1308/output/BAM_files/illumina_25/3164_5_S5_sorted.bam
+NC_014931.1	1761874	.	T	G	202.767	.	DP=249;VDB=0.997401;SGB=-0.693147;RPBZ=-0.426235;MQBZ=6.23354;MQSBZ=1.29822;BQBZ=0.278007;FS=0;MQ0F=0.104418;AC=1;AN=2;DP4=47,20,118,52;MQ=21	GT:PL	0/1:235,0,8
+NC_014931.1	1761931	.	A	G	127.385	.	DP=252;VDB=0.000598857;SGB=-0.693147;RPBZ=-1.14228;MQBZ=-8.67356;MQSBZ=2.69813;BQBZ=3.43557;FS=0;MQ0F=0.214286;AC=1;AN=2;DP4=56,26,124,34;MQ=18	GT:PL	0/1:160,0,219
+NC_014931.1	1849812	.	A	G	227.804	.	DP=273;VDB=2.6687e-22;SGB=-0.693147;RPBZ=0.639902;MQBZ=0.607644;MQSBZ=-1.40752;BQBZ=-0.00820636;FS=0;MQ0F=0;AC=2;AN=2;DP4=34,3,201,15;MQ=41	GT:PL	1/1:255,133,0
+NC_014931.1	6284147	.	T	C	78.9941	.	DP=80;VDB=0.000718213;SGB=-0.693147;RPBZ=-1.03701;MQBZ=-1.68475;MQSBZ=1.07301;BQBZ=-4.87259;FS=0;MQ0F=0.3;AC=2;AN=2;DP4=3,3,71,0;MQ=12	GT:PL	1/1:106,104,0
+NC_014931.1	6284363	.	T	C	99.2644	.	DP=66;VDB=0.000155766;SGB=-0.693147;RPBZ=-1.28788;MQBZ=-1.70814;BQBZ=-0.176756;FS=0;MQ0F=0.378788;AC=2;AN=2;DP4=0,1,0,65;MQ=13	GT:PL	1/1:126,153,0
+NC_014931.1	6284388	.	G	A	85.0231	.	DP=61;VDB=1.66974e-11;SGB=-0.693147;RPBZ=1.65898;MQBZ=-0.456539;BQBZ=1.19493;FS=0;MQ0F=0.311475;AC=2;AN=2;DP4=0,5,0,56;MQ=15	GT:PL	1/1:112,83,0
+NC_014931.1	6284412	.	A	G	149.416	.	DP=63;VDB=4.663e-06;SGB=-0.693147;MQSBZ=1.97792;FS=0;MQ0F=0.365079;AC=2;AN=2;DP4=0,0,3,59;MQ=13	GT:PL	1/1:179,187,0
